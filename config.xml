@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.benkesmith.phonegap.app" version="1.8.71" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.benkesmith.phonegap.app" version="1.8.72" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>PhoneGap</name>
     <description>
         PhoneGap Developer app
@@ -96,9 +96,6 @@
 
 
 	<plugin name="cordova-plugin-battery-status" />
-    <!-- <plugin name="cordova-plugin-ble-central">
-        <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Bluetooth development purposes" />
-    </plugin> -->
     <plugin name="cordova-plugin-camera">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
@@ -125,7 +122,6 @@
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-screen-orientation" />
     <plugin name="cordova-plugin-splashscreen" />
-    <!-- <plugin name="cordova-plugin-statusbar" /> -->
     <plugin name="cordova-plugin-vibration" />
     <plugin name="cordova-plugin-x-socialsharing" />
     <plugin name="phonegap-plugin-barcodescanner">
@@ -146,10 +142,12 @@
 	<plugin name="cordova.plugins.diagnostic" />
 	<plugin name="cordova-plugin-hide-home-indicator" />
 	<plugin name="cordova-plugin-save-image" />
+	<plugin name="cordova-pebble" source="npm"/>
 
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-tts.git" source="git" />
 	<!-- <plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" /> -->
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-statusbar.git" source="git" />
+	<plugin spec="https://github.com/katzer/cordova-plugin-local-notifications.git" source="git" />
 
     <plugin spec="https://github.com/ragcsalo/cordova-plugin-ble-central.git" source="git">
         <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
