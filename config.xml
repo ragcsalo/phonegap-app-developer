@@ -153,6 +153,14 @@
         <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
     </plugin>
 
+    <plugin spec="https://github.com/ragcsalo/cordova-plugin-universal-links.git" source="git" />
+
+<universal-links>
+    <host name="benkesmith.com" scheme="https" event="bs_myUrlEvent">
+      <path url="/specurl/*" />
+    </host>
+    <ios-team-id value="JPPF2RU5E5" />
+</universal-links>
 
 
 </widget>
