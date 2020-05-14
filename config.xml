@@ -134,37 +134,28 @@
     </plugin>
     <plugin name="cordova-plugin-whitelist" />
 
-    <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="cordova-plugin-bluetoothle" />
+    	<plugin name="cordova-plugin-device-orientation" />
+    	<plugin name="cordova-plugin-bluetoothle" />
 	<plugin name="cordova-plugin-ios-longpress-fix" />
-    <plugin name="cordova-force-app-close" />
-    <plugin name="cordova-plugin-proximity-sensor" />
+	<plugin name="cordova-force-app-close" />
+	<plugin name="cordova-plugin-proximity-sensor" />
 	<plugin name="cordova.plugins.diagnostic" />
 	<plugin name="cordova-plugin-hide-home-indicator" />
 	<plugin name="cordova-plugin-save-image" />
-	<plugin name="cordova-pebble" source="npm"/>
+	<plugin name="cordova-pebble" source="npm" />
 
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-tts.git" source="git" />
-	<!-- <plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" /> -->
+	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-statusbar.git" source="git" />
 	<plugin spec="https://github.com/katzer/cordova-plugin-local-notifications.git" source="git" />
 
-    <plugin spec="https://github.com/ragcsalo/cordova-plugin-ble-central.git" source="git">
-        <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
-    </plugin>
+    	<plugin spec="https://github.com/ragcsalo/cordova-plugin-ble-central.git" source="git">
+       	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
+    	</plugin>
 
-    <plugin spec="https://github.com/ragcsalo/cordova-plugin-universal-links.git" source="git" />
-
-<universal-links>
-    <host name="benkesmith.com" scheme="https" event="bs_myUrlEvent">
-      <path url="/specurl/*" />
-    </host>
-    <ios-team-id value="JPPF2RU5E5" />
-</universal-links>
-	
-    <plugin name="cordova-plugin-customurlscheme" source="npm">
-      <param name="URL_SCHEME" value="bsmagic" />
-    </plugin>
+	<plugin spec="https://github.com/enterstudio/AppleWatch.git" source="git" />
+	<plugin name="cordova-clipboard" source="npm" />
+	<plugin name="cordova-plugin-fullscreen" source="npm" />
 	
 
 
