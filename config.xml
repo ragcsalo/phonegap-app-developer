@@ -28,40 +28,50 @@
 	<access origin="*"/>
     <allow-navigation href="*" />
     <allow-intent href="*" />
-	<platform name="ios">
-	  <allow-intent href="itms:*" />
-	  <allow-intent href="itms-apps:*" />
+    
+    <platform name="ios">
+	<allow-intent href="itms:*" />
+	<allow-intent href="itms-apps:*" />
     </platform>
 
 	
     <content src="index.html" />
     
-	<platform name="ios">
+    <platform name="ios">
+
+	<plugin name="cordova-plugin-wkwebview-engine" source="npm" />
+
+        <feature name="CDVWKWebViewEngine">
+            <param name="ios-package" value="CDVWKWebViewEngine" />
+        </feature>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+        <preference name="WKWebViewOnly" value="true" />
+	    
         <preference name="Orientation" value="all" />
         <preference name="AutoHideSplashScreen" value="false" />
 
-		<preference name="permissions"                value="none"/>
-		<preference name="phonegap-version"           value="cli-9.0.0" />
-		<preference name="target-device"              value="universal" />
-		<preference name="Fullscreen"                 value="true" />
-		<preference name="webviewbounce"              value="false" />
-		<preference name="prerendered-icon"           value="false" />
-		<preference name="stay-in-webview"            value="true" />
-		<preference name="ios-statusbarstyle"         value="black-opaque" />
-		<preference name="detect-data-types"          value="true" />
-		<preference name="exit-on-suspend"            value="true" />
-		<preference name="show-splash-screen-spinner" value="false" />
-		<preference name="auto-hide-splash-screen"    value="true" />
-		<preference name="SplashScreenDelay"          value="3000" />
-		<preference name="deployment-target"		  value="9.0" />
-		<preference name="StatusBarOverlaysWebView"   value="false" />
-		<preference name="backgroundColor"            value="0x00000000" />
-		<preference name="EnableViewportScale"        value="true" />
-		<preference name="Suppresses3DTouchGesture"   value="true" />
-		<preference name="Allow3DTouchLinkPreview" value="false" />
-		<preference name="SuppressesIncrementalRendering" value="true" />
-		<preference name="AllowInlineMediaPlayback" value="true" />
-		<preference name="CameraUsesGeolocation" value="false" />
+	<preference name="permissions"                value="none"/>
+	<preference name="phonegap-version"           value="cli-9.0.0" />
+	<preference name="target-device"              value="universal" />
+	<preference name="Fullscreen"                 value="true" />
+	<preference name="webviewbounce"              value="false" />
+	<preference name="prerendered-icon"           value="false" />
+	<preference name="stay-in-webview"            value="true" />
+	<preference name="ios-statusbarstyle"         value="black-opaque" />
+	<preference name="detect-data-types"          value="true" />
+	<preference name="exit-on-suspend"            value="true" />
+	<preference name="show-splash-screen-spinner" value="false" />
+	<preference name="auto-hide-splash-screen"    value="true" />
+	<preference name="SplashScreenDelay"          value="3000" />
+	<preference name="deployment-target"          value="9.0" />
+	<preference name="StatusBarOverlaysWebView"   value="false" />
+	<preference name="backgroundColor"            value="0x00000000" />
+	<preference name="EnableViewportScale"        value="true" />
+	<preference name="Suppresses3DTouchGesture"   value="true" />
+	<preference name="Allow3DTouchLinkPreview" value="false" />
+	<preference name="SuppressesIncrementalRendering" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="true" />
+	<preference name="CameraUsesGeolocation" value="false" />
 
         <icon height="167" src="resources/icon/ios/icon-83.5@2x.png" width="167" />
         <icon height="76" src="resources/icon/ios/icon-76.png" width="76" />
@@ -96,46 +106,46 @@
 
 
 	<plugin name="cordova-plugin-battery-status" />
-    <plugin name="cordova-plugin-camera">
-        <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
-        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
-    </plugin>
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-device-motion" />
-    <plugin name="cordova-plugin-dialogs" />
-    <plugin name="cordova-plugin-file" />
-    <plugin name="cordova-plugin-file-transfer" />
-    <plugin name="cordova-plugin-geolocation">
-        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Geolocation used for development purposes" />
-    </plugin>
-    <plugin name="cordova-plugin-globalization" />
-    <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-insomnia" />
-    <plugin name="cordova-plugin-media">
-        <variable name="MICROPHONE_USAGE_DESCRIPTION" value=" " />
-    </plugin>
-    <plugin name="cordova-plugin-media-capture">
-        <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
-        <variable name="MICROPHONE_USAGE_DESCRIPTION" value="Microphone used for development purposes" />
-        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Photo library used for development purposes" />
-    </plugin>
-    <plugin name="cordova-plugin-network-information" />
-    <plugin name="cordova-plugin-screen-orientation" />
-    <plugin name="cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-vibration" />
-    <plugin name="cordova-plugin-x-socialsharing" />
-    <plugin name="phonegap-plugin-barcodescanner">
-        <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
-    </plugin>
-    <plugin name="phonegap-plugin-contentsync" />
-    <plugin name="phonegap-plugin-mobile-accessibility" />
-    <plugin name="phonegap-plugin-push">
-        <variable name="FCM_VERSION" value="11.0.1" />
-    </plugin>
-    <plugin name="cordova-plugin-whitelist" />
+	<plugin name="cordova-plugin-camera">
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The app needs to access photos to select background image" />
+	</plugin>
+	<plugin name="cordova-plugin-device" />
+	<plugin name="cordova-plugin-device-motion" />
+	<plugin name="cordova-plugin-dialogs" />
+	<plugin name="cordova-plugin-file" />
+	<plugin name="cordova-plugin-file-transfer" />
+	<plugin name="cordova-plugin-geolocation">
+	<variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Geolocation used for development purposes" />
+	</plugin>
+	<plugin name="cordova-plugin-globalization" />
+	<plugin name="cordova-plugin-inappbrowser" />
+	<plugin name="cordova-plugin-insomnia" />
+	<plugin name="cordova-plugin-media">
+	<variable name="MICROPHONE_USAGE_DESCRIPTION" value="The app needs microphone access for voice recognition" />
+	</plugin>
+	<plugin name="cordova-plugin-media-capture">
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
+	<variable name="MICROPHONE_USAGE_DESCRIPTION" value="Microphone used for development purposes" />
+	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Photo library used for development purposes" />
+	</plugin>
+	<plugin name="cordova-plugin-network-information" />
+	<plugin name="cordova-plugin-screen-orientation" />
+	<plugin name="cordova-plugin-splashscreen" />
+	<plugin name="cordova-plugin-vibration" />
+	<plugin name="cordova-plugin-x-socialsharing" />
+	<plugin name="phonegap-plugin-barcodescanner">
+	<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
+	</plugin>
+	<plugin name="phonegap-plugin-contentsync" />
+	<plugin name="phonegap-plugin-mobile-accessibility" />
+	<plugin name="phonegap-plugin-push">
+	<variable name="FCM_VERSION" value="11.0.1" />
+	</plugin>
+	<plugin name="cordova-plugin-whitelist" />
 
-    	<plugin name="cordova-plugin-device-orientation" />
-    	<plugin name="cordova-plugin-bluetoothle" />
+	<plugin name="cordova-plugin-device-orientation" />
+	<plugin name="cordova-plugin-bluetoothle" />
 	<plugin name="cordova-plugin-ios-longpress-fix" />
 	<plugin name="cordova-force-app-close" />
 	<plugin name="cordova-plugin-proximity-sensor" />
@@ -149,13 +159,11 @@
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-statusbar.git" source="git" />
 	<plugin spec="https://github.com/katzer/cordova-plugin-local-notifications.git" source="git" />
 
-    	<plugin spec="https://github.com/ragcsalo/cordova-plugin-ble-central.git" source="git">
-       	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
-    	</plugin>
+	<plugin spec="https://github.com/ragcsalo/cordova-plugin-ble-central.git" source="git">
+	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
+	</plugin>
 
 	<plugin name="cordova-clipboard" source="npm" />
 	<plugin name="cordova-plugin-fullscreen" source="npm" />
-	
-
 
 </widget>
