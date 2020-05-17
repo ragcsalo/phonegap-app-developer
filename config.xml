@@ -159,6 +159,7 @@
 	
 	<plugin name="cordova-plugin-save-image" />
 	<plugin name="cordova-pebble" source="npm" />
+	<plugin name="cordova-plugin-nativestorage" source="npm" />
 
 	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
 
