@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.benkesmith.phonegap.app" version="1.8.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.benkesmith.phonegap.app" version="1.8.81" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>PhoneGapWk</name>
     <description>
         PhoneGap Developer app
@@ -129,62 +129,34 @@
     <plugin name="cordova-force-app-close" />
     <plugin name="cordova-plugin-proximity-sensor" />
     <plugin name="phonegap-plugin-contentsync" />
-
 	
-    <!-- 	
-	<plugin name="cordova-plugin-battery-status" />
-	<plugin name="cordova-plugin-camera">
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
-	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The app needs to access photos to select background image" />
-	</plugin>
-	<plugin name="cordova-plugin-device" />
-	<plugin name="cordova-plugin-device-motion" />
-	<plugin name="cordova-plugin-dialogs" />
-	<plugin name="cordova-plugin-file" />
-	<plugin name="cordova-plugin-file-transfer" />
-	<plugin name="cordova-plugin-geolocation">
-	<variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Geolocation used for development purposes" />
-	</plugin>
-	<plugin name="cordova-plugin-globalization" />
-	<plugin name="cordova-plugin-inappbrowser" />
-	<plugin name="cordova-plugin-insomnia" />
-	<plugin name="cordova-plugin-media">
-	<variable name="MICROPHONE_USAGE_DESCRIPTION" value="The app needs microphone access for voice recognition" />
-	</plugin>
-	<plugin name="cordova-plugin-media-capture">
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
-	<variable name="MICROPHONE_USAGE_DESCRIPTION" value="Microphone used for development purposes" />
-	<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Photo library used for development purposes" />
-	</plugin>
-	<plugin name="cordova-plugin-network-information" />
-	<plugin name="cordova-plugin-screen-orientation" />
-	<plugin name="cordova-plugin-splashscreen" />
-	<plugin name="cordova-plugin-vibration" />
 	<plugin name="cordova-plugin-x-socialsharing" />
 	<plugin name="phonegap-plugin-barcodescanner">
-	<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
+	  <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
 	</plugin>
-	<plugin name="phonegap-plugin-contentsync" />
+
+	<plugin name="cordova-plugin-geolocation">
+    	  <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Geolocation used for development purposes" />
+	</plugin>
+	<plugin name="cordova-plugin-battery-status" />
+	<plugin name="cordova-plugin-camera">
+  	  <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
+	  <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The app needs to access photos to select background image" />
+	</plugin>
+	<plugin name="cordova-plugin-device-motion" />
+	<plugin name="cordova-plugin-media">
+	  <variable name="MICROPHONE_USAGE_DESCRIPTION" value="The app needs microphone access for voice recognition" />
+	</plugin>
+	<plugin name="cordova-plugin-media-capture">
+	  <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera used for development purposes" />
+	  <variable name="MICROPHONE_USAGE_DESCRIPTION" value="Microphone used for development purposes" />
+	  <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Photo library used for development purposes" />
+	</plugin>
 	<plugin name="phonegap-plugin-mobile-accessibility" />
 	<plugin name="phonegap-plugin-push">
-	<variable name="FCM_VERSION" value="11.0.1" />
+	  <variable name="FCM_VERSION" value="11.0.1" />
 	</plugin>
-	<plugin name="cordova-plugin-whitelist" />
-
 	<plugin name="cordova-plugin-device-orientation" />
-	<plugin name="cordova-plugin-bluetoothle" />
-	<plugin name="cordova-plugin-ios-longpress-fix" />
-	<plugin name="cordova-force-app-close" />
-	<plugin name="cordova-plugin-proximity-sensor" />
-	<plugin name="cordova.plugins.diagnostic" />
-	<plugin name="cordova-plugin-hide-home-indicator" />
-	<plugin name="cordova-plugin-save-image" />
-	<plugin name="cordova-pebble" source="npm" />
-
-	<plugin spec="https://github.com/ragcsalo/cordova-plugin-tts.git" source="git" />
-	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
-	<plugin spec="https://github.com/ragcsalo/cordova-plugin-statusbar.git" source="git" />
-	<plugin spec="https://github.com/katzer/cordova-plugin-local-notifications.git" source="git" />
 
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-ble-central.git" source="git">
 	  <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
@@ -192,6 +164,13 @@
 
 	<plugin name="cordova-clipboard" source="npm" />
 	<plugin name="cordova-plugin-fullscreen" source="npm" />
+	
+    <!-- 	
+	<plugin name="cordova-plugin-save-image" />
+	<plugin name="cordova-pebble" source="npm" />
+
+	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
+
 
      -->
 
