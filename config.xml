@@ -39,14 +39,6 @@
     
     <platform name="ios">
 
-	<plugin name="cordova-plugin-wkwebview-engine" source="npm" />
-
-        <feature name="CDVWKWebViewEngine">
-            <param name="ios-package" value="CDVWKWebViewEngine" />
-        </feature>
-        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-        <preference name="WKWebViewOnly" value="true" />
-	    
         <preference name="Orientation" value="all" />
         <preference name="AutoHideSplashScreen" value="false" />
 
@@ -165,13 +157,9 @@
 	<plugin name="cordova-clipboard" source="npm" />
 	<plugin name="cordova-plugin-fullscreen" source="npm" />
 	
-    <!-- 	
 	<plugin name="cordova-plugin-save-image" />
 	<plugin name="cordova-pebble" source="npm" />
 
 	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
-
-
-     -->
 
 </widget>
