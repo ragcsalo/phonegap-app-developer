@@ -115,6 +115,7 @@
     <plugin name="cordova-plugin-file" />
     <plugin name="cordova-plugin-file-transfer"/>
     <plugin name="cordova-plugin-globalization" />
+    <plugin name="cordova-plugin-http" />
     <plugin name="cordova-plugin-hide-home-indicator" />
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-insomnia" />
@@ -131,6 +132,8 @@
     <plugin name="cordova-force-app-close" />
     <plugin name="cordova-plugin-proximity-sensor" />
     <plugin name="phonegap-plugin-contentsync" />
+    <plugin name="cordova-plugin-wkwebview-engine" />
+
 	
 	<plugin name="cordova-plugin-x-socialsharing" />
 	<plugin name="phonegap-plugin-barcodescanner">
