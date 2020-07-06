@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.benkesmith.phonegap.app" version="1.8.81" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PhoneGapWk</name>
+<widget id="com.benkesmith.phonegap.app" version="1.8.82" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhoneGap</name>
     <description>
         PhoneGap Developer app
     </description>
@@ -39,6 +39,17 @@
     
     <platform name="ios">
 
+	<config-file target="*-Info.plist" parent="UIBackgroundModes">
+		<array>
+			<string>audio</string>
+			<string>bluetooth-central</string>
+			<string>bluetooth-peripheral</string>
+			<string>fetch</string>
+		</array>
+	</config-file>
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+	<preference name="WKWebViewOnly" value="true" />
+	    
         <preference name="Orientation" value="all" />
         <preference name="AutoHideSplashScreen" value="false" />
 
@@ -96,6 +107,7 @@
         <splash height="1242" src="resources/splash/ios/Default-Landscape-736h.png" width="2208" />
     </platform>
 
+    <plugin name="cordova-clipboard" />
     <plugin name="cordova-plugin-badge" />
     <plugin name="cordova-plugin-bluetoothle">
       <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Scan for Bluetooth Low Energy Peripherals" />
@@ -114,7 +126,7 @@
     <plugin name="cordova-plugin-screen-orientation" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin spec="https://github.com/ragcsalo/cordova-plugin-statusbar.git" source="git" />
-    <plugin spec="https://github.com/ragcsalo/cordova-plugin-tts.git" source="git" />
+    <plugin spec="https://github.com/benkesmith/cordova-texttospeech-plugin.git" source="git" />
     <plugin name="cordova-plugin-vibration" />
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova.plugins.diagnostic" />
@@ -162,5 +174,10 @@
 	<plugin name="cordova-plugin-nativestorage" source="npm" />
 
 	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
+	<plugin name="cordova-plugin-wkwebview-engine" />
+	<plugin name="cordova-plugin-wkwebview-inputfocusfix" />
+	<plugin name="cordova-simple-volume" />
+	<plugin spec="https://github.com/ragcsalo/cordova-plugin-background-mode.git" source="git" />
+	
 
 </widget>
