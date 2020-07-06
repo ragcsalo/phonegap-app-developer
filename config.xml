@@ -172,8 +172,6 @@
 	<plugin name="cordova-plugin-nativestorage" source="npm" />
 
 	<plugin spec="https://github.com/ragcsalo/cordova-save-image-gallery.git" source="git" />
-	<plugin name="cordova-plugin-wkwebview-engine" />
-	<plugin name="cordova-plugin-wkwebview-inputfocusfix" />
 	<plugin name="cordova-simple-volume" />
 	<plugin spec="https://github.com/ragcsalo/cordova-plugin-background-mode.git" source="git" />
 	
