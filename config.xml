@@ -132,7 +132,6 @@
     <plugin name="cordova-force-app-close" />
     <plugin name="cordova-plugin-proximity-sensor" />
     <plugin name="phonegap-plugin-contentsync" />
-    <plugin name="cordova-plugin-wkwebview-engine" />
 
 	
 	<plugin name="cordova-plugin-x-socialsharing" />
